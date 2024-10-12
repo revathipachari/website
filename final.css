@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+p {
+    color: #666;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+form input, form textarea, form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1px;
+    position: fixed;
+    height: 4%;
+    width: 100%;
+    bottom: 0;
+}
+
+.categories button {
+    margin: 5px;
+    padding: 10px;
+    background-color: #ddd;
+    border: none;
+    cursor: pointer;
+}
+
+.categories button:hover {
+    background-color: #bbb;
+}
+
+.videos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.video {
+    margin: 10px;
+    width: 300px;
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+.team {
+    display: flex;
+    justify-content: center;
+}
+
+.team-member {
+    margin: 20px;
+    text-align: center;
+}
+
+.team-member img {
+    width: 150px;
+    border-radius: 50%;
+}
+/* Base styling for large screens (default) */
+
+/* Media Query for tablets (max width 768px) */
+@media only screen and (max-width: 768px) {
+    .videos, .team {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .video, .team-member {
+        width: 80%;
+        margin: 20px 0;
+    }
+
+    form input, form textarea {
+        width: 90%;
+    }
+}
+
+/* Media Query for mobile devices (max width 480px) */
+@media only screen and (max-width: 480px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    .team-member img {
+        width: 100px;
+    }
+
+    form input, form textarea, form button {
+        width: 100%;
+    }
+
+    .video {
+        width: 100%;
+    }
+}
